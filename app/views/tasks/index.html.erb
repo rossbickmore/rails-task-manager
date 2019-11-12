@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col">
+      <div class="card">
+      <h1>TASKS</h1>
+      <div class=task-container>
+        <% @tasks.each do |task| %>
+          <div class="task-card">
+          <% if task.completed == true %>
+            <input type="checkbox" checked>
+          <% else %>
+            <input type="checkbox">
+          <% end %>
+          <%= link_to task.title, task_path(task) %>
+          <%= link_to "Delete", task_path(task),
+            method: :delete
+          %>
+          </div>
+        <% end %>
+      </div>
+      <%= link_to "Add a new task", new_task_url %>
+      </div>
+    </div>
+  </div>
+</div>

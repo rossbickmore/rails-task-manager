@@ -1,0 +1,26 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$grey: #F1F1F1;
+$background: #fcf5e5;
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, p {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid $grey;
+ }
+
+.task-card {
+  padding: 5px;
+  margin: 5px;
+}
